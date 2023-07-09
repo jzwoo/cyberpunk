@@ -2,6 +2,7 @@ import React from "react";
 import {Text} from "../../constants/constants";
 import Ticker from "../Ticker/Ticker";
 import "./Home.css";
+import FloatingImage from "../FloatingImage/FloatingImage";
 
 const Home: React.FC = () => {
     return (
@@ -15,9 +16,6 @@ const Home: React.FC = () => {
                     {`[${Text.CYBER_JAP}]`}
                 </p>
             </div>
-
-            <img className="image1" src="image1.jpg"></img>
-            <img className="image2" src="image2.jpg"></img>
 
             <Ticker/>
 
@@ -36,6 +34,8 @@ const Home: React.FC = () => {
                     <span style={{color: "gold"}}>{`[${Text.SCROLL_JAP}]`}</span>
                 </a>
             </div>
+
+            <FloatingImage/>
         </div>
     )
 }

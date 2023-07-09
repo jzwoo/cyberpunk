@@ -1,0 +1,17 @@
+.image1 {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    right: 355px;
+    top: 350px;
+    z-index: 1;
+}
+
+.image2 {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    right: 40px;
+    top: 94px;
+    z-index: 1;
+}
