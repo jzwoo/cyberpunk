@@ -1,6 +1,6 @@
 :root {
-    --black: #070708;
-    --white: #D7D7D7;
+    --black: #1D1E22;
+    --white: #FDFDFD;
     --gold: #9C7244
 }
 
@@ -8,25 +8,49 @@
     background-color: var(--black);
     height: 100vh;
     color: var(--white);
+    font-family: 'Exo 2', sans-serif;
+}
+
+.title-container {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    font-size: 140px;
+}
+
+.sub-title {
+    font-size: 35px;
 }
 
 .ticker {
     overflow: hidden;
     white-space: nowrap;
+    border: 1px solid var(--gold);
+    border-left: none;
+    border-right: none;
 }
 
 .ticker ul {
     display: inline-block;
-    padding-left: 100%; /* Start offscreen */
     animation: ticker 20s linear infinite;
 }
 
 .ticker li {
     display: inline-block;
+    font-weight: bold;
+    font-size: 40px;
     padding-right: 1em;
 }
 
 @keyframes ticker {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-2000px);
+    }
 }
