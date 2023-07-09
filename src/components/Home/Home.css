@@ -1,5 +1,9 @@
 .home {
-    height: 100vh;
+    height: calc(100vh - 58px); /* minus the navbar */
+}
+
+.home span {
+    color: gold;
 }
 
 .title-container {
@@ -45,7 +49,7 @@
 }
 
 .scroll-container a {
-    color: #FDFDFD;
+    color: var(--white);
     text-decoration: none;
 }
 

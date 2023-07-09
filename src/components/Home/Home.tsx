@@ -20,8 +20,8 @@ const Home: React.FC = () => {
             <Ticker/>
 
             <p className="intro">
-                In an industry where seemingly everything has already been said.<span
-                style={{color: "gold"}}>{Text.ECOMMERCE_JAP}</span> seeks to comment more than state.
+                In an industry where seemingly everything has already been said. <span>{Text.ECOMMERCE_JAP}</span> seeks
+                to comment more than state.
                 <span className="blink-caret"> Check out the new neohuman collection.</span>
             </p>
 
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
                 </a>
 
                 <a href="#products">
-                    <span style={{color: "gold"}}>{`[${Text.SCROLL_JAP}]`}</span>
+                    <span>{`[${Text.SCROLL_JAP}]`}</span>
                 </a>
             </div>
 
