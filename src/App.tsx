@@ -1,20 +1,9 @@
 import React from 'react';
 import './App.css';
 import NavBar from "./components/NavBar/NavBar";
+import Ticker from "./components/Ticker/Ticker";
 
 const App: React.FC = () => {
-
-    const renderListItems = () => {
-        const items = [];
-
-        for (let i = 0; i < 20; i++) {
-            const color = i % 2 === 0 ? "white" : "gold";
-            items.push(<li style={{color}} key={i}>サイバー</li>);
-        }
-
-        return items;
-    };
-
 
     return (
         <div className="app">
@@ -30,11 +19,7 @@ const App: React.FC = () => {
                 </p>
             </div>
 
-            <div className="ticker" id="ticker">
-                <ul>
-                    {renderListItems()}
-                </ul>
-            </div>
+            <Ticker/>
         </div>
     );
 }
