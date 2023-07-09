@@ -6,70 +6,7 @@
 
 .app {
     background-color: var(--black);
-    height: 100vh;
+    height: 300vh;
     color: var(--white);
     font-family: 'Exo 2', sans-serif;
-}
-
-.title-container {
-    padding-left: 40px;
-    display: flex;
-    flex-direction: row;
-}
-
-.title {
-    font-size: 140px;
-}
-
-.sub-title {
-    margin-left: 10px;
-    font-size: 35px;
-}
-
-.image1 {
-    position: absolute;
-    width: 600px;
-    height: auto;
-    right: 355px;
-    top: 350px;
-    z-index: 1;
-}
-
-.image2 {
-    position: absolute;
-    width: 300px;
-    height: auto;
-    right: 40px;
-    top: 94px;
-    z-index: 1;
-}
-
-.intro {
-    padding-left: 40px;
-    width: 400px;
-
-    font-family: 'Roboto Mono', monospace;
-    letter-spacing: 8px;
-    line-height: 2;
-    text-align: justify;
-}
-
-.blink-caret {
-    border-right: .15em solid gold;
-    animation: blink-caret .75s step-end infinite;
-}
-
-.scroll {
-    position: absolute;
-    bottom: 20px;
-    right: 40px;
-}
-
-@keyframes blink-caret {
-    0% {
-        border-color: transparent
-    }
-    50% {
-        border-color: gold;
-    }
 }
