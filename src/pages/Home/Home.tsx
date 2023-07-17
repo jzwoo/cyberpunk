@@ -1,8 +1,8 @@
 import React from "react";
 import {Text} from "../../constants/constants";
-import Ticker from "../Ticker/Ticker";
+import Ticker from "../../components/Ticker/Ticker";
 import "./Home.css";
-import FloatingImage from "../FloatingImage/FloatingImage";
+import FloatingImage from "../../components/FloatingImage/FloatingImage";
 
 const Home: React.FC = () => {
     return (
@@ -26,11 +26,11 @@ const Home: React.FC = () => {
             </p>
 
             <div className="scroll-container">
-                <a href="#products">
+                <a href="src/pages/Home/Home#products">
                     SCROLL
                 </a>
 
-                <a href="#products">
+                <a href="src/pages/Home/Home#products">
                     <span>{`[${Text.SCROLL_JAP}]`}</span>
                 </a>
             </div>

@@ -1,19 +1,27 @@
 import React from 'react';
 import './App.css';
-import Home from "./components/Home/Home";
-import Products from "./components/Products/Products";
-import NavBar from "./components/NavBar/NavBar";
+import Home from "./pages/Home/Home";
+import {Navigate, Route, Routes} from "react-router-dom";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import User from "./pages/User/User";
 
 const App: React.FC = () => {
-
     return (
-        <div className="app">
-            <NavBar/>
+        <Routes>
+            <Route path="/">
+                {/* public routes */}
+                <Route path="/" element={<Home/>}/>
+                <Route path="login" element={<Login/>}/>
+                <Route path="register" element={<Register/>}/>
 
-            <Home/>
+                {/* protected routes */}
+                <Route path="user" element={<User/>}/>
 
-            <Products/>
-        </div>
+                {/* catch all */}
+                <Route path="*" element={<Navigate to="/" replace={true}/>}/>
+            </Route>
+        </Routes>
     );
 }
 
