@@ -6,7 +6,7 @@ import "./Main.css"
 
 const Main: React.FC = () => {
     return (
-        <div>
+        <div className="main-container">
             <NavBar/>
 
             <div className="title-container pad-left">
@@ -24,8 +24,12 @@ const Main: React.FC = () => {
             <p className="intro pad-left">
                 In an industry where seemingly everything has already been said.<span
                 style={{color: "gold"}}>{Text.ECOMMERCE_JAP}</span> seeks to comment more than state.
-                <span className="blink-caret">Check out the new neohuman collection.</span>
+                <span className="blink-caret"> Check out the new neohuman collection.</span>
             </p>
+
+            <div className="bottom-container">
+                <img className="image1" src="image1.jpg"></img>
+            </div>
 
             <div className="scroll-container">
                 <a href="#products">
