@@ -1,8 +1,8 @@
 .image1 {
     position: absolute;
-    width: 600px;
+    width: 700px;
     height: auto;
-    right: 355px;
+    right: 360px;
     top: 350px;
     z-index: 1;
 }
@@ -14,4 +14,17 @@
     right: 40px;
     top: 94px;
     z-index: 1;
+}
+
+@media screen and (max-width: 1600px) {
+    .image1 {
+        width: 400px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .image1 {
+        display: none;
+    }
 }

@@ -23,9 +23,10 @@
 
 .intro {
     padding-left: 40px;
-    width: 400px;
+    width: 500px;
 
     font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
     letter-spacing: 8px;
     line-height: 2;
     text-align: justify;
@@ -60,5 +61,12 @@
 
     50% {
         border-color: gold;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .intro {
+        width: 400px;
+        font-size: 1em;
     }
 }
