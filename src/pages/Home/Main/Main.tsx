@@ -21,14 +21,20 @@ const Main: React.FC = () => {
 
             <Ticker/>
 
-            <p className="intro pad-left">
-                In an industry where seemingly everything has already been said.<span
-                style={{color: "gold"}}>{Text.ECOMMERCE_JAP}</span> seeks to comment more than state.
-                <span className="blink-caret"> Check out the new neohuman collection.</span>
-            </p>
-
             <div className="bottom-container">
-                <img className="image1" src="image1.jpg"></img>
+                <p className="intro">
+                    In an industry where seemingly everything has already been said.<span
+                    style={{color: "gold"}}>{Text.ECOMMERCE_JAP}</span> seeks to comment more than state.
+                    <span className="blink-caret"> Check out the new neohuman collection.</span>
+                </p>
+
+                <div>
+                    <img className="image1" src="image1.jpg"/>
+                </div>
+
+                <div>
+                    <img className="image2" src="image2.jpg"/>
+                </div>
             </div>
 
             <div className="scroll-container">
