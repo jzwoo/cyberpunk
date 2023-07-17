@@ -27,3 +27,22 @@
         transform: translateX(-2000px);
     }
 }
+
+@media (max-width: 767px) {
+    .ticker li {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 20px;
+        padding-right: 0.5em;
+    }
+
+    @keyframes ticker {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-900px);
+        }
+    }
+}
