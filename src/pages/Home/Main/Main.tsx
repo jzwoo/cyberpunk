@@ -31,7 +31,7 @@ const Main: React.FC = () => {
                 <img className="image1" src="image1.jpg"/>
 
                 {/* image2 is put in a div because for some reason the pic does not move up */}
-                <div>
+                <div className="image2-container">
                     <img className="image2" src="image2.jpg"/>
                 </div>
             </div>

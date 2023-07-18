@@ -20,6 +20,17 @@
     font-size: 35px;
 }
 
+.bottom-container {
+    position: relative;
+    display: flex;
+    /* 405px is the top half up to the ticker plus the 2 padding of the bottom-container */
+    height: calc(100vh - 405px);
+
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+
 .intro {
     width: 500px;
     font-family: 'Roboto Mono', monospace;
@@ -34,26 +45,20 @@
     animation: blink-caret 1.5s step-end infinite;
 }
 
-.bottom-container {
-    position: relative;
-    display: flex;
-    /* 405px is the top half up to the ticker plus the 2 padding of the bottom-container */
-    height: calc(100vh - 405px);
-
-    justify-content: space-between;
-    gap: 20px;
-    padding: 40px;
-}
-
 .image1 {
-    height: 100%;
+    width: calc(75% - 500px);
+    max-height: 100%;
     object-fit: cover;
 }
 
-.image2 {
+.image2-container {
+    width: 25%;
     /* 270px aligns it with the title */
     margin-top: -270px;
-    width: 380px;
+}
+
+.image2 {
+    width: 100%;
 }
 
 .scroll-container {
@@ -95,13 +100,14 @@
     }
 }
 
-@media (max-width: 1470px) and (min-width: 915px) {
+/* 1180px is when image2 is squashed so much that it begins to look unpleasant */
+@media (max-width: 1180px) {
     .image1 {
-        width: 50%;
+        width: calc(100% - 500px);
         object-fit: cover;
     }
 
-    .image2 {
+    .image2-container {
         display: none;
     }
 
@@ -110,6 +116,7 @@
     }
 }
 
+/* 915px is when intro is squashed so much that it begins to overflow */
 @media (max-width: 915px) {
     .title {
         font-size: 70px;
@@ -125,6 +132,7 @@
         flex: 1;
 
         align-items: center;
+        justify-content: space-evenly;
         padding: 20px;
     }
 
@@ -139,24 +147,20 @@
     .image1 {
         width: 80%;
     }
-
-    .image2 {
-        display: none;
-    }
-
-    .scroll-container {
-        display: none;
-    }
 }
 
-@media (max-height: 780px) {
-    .scroll-container {
-        display: none;
-    }
-
+/* 650px is when the intro text is closed to being squashed */
+@media (max-height: 650px) {
     .intro {
         font-size: 15px;
         letter-spacing: 4px;
         line-height: 2;
+    }
+}
+
+/* 950px is when the scroll text is close to touching image2 */
+@media (max-height: 950px) {
+    .scroll-container {
+        display: none;
     }
 }
