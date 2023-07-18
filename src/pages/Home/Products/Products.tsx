@@ -15,15 +15,34 @@ const Products: React.FC = () => {
         })
 
         return () => {
-            let cancel = true;
+            cancel = true;
         }
     }, []);
 
+    const image1 = "image1.jpg"
+    const image2 = "image2.jpg"
+    const image3 = "image3.jpg"
+    const image4 = "image4.jpg"
+    const image5 = "image5.jpg"
+    const image6 = "image6.jpg"
+
     return (
         <div id="products" className="products-container">
-            {products.map((product) => {
-                return <div>{product.name}</div>
-            })}
+            <div className="gallery-container">
+                <img className="images" src={image1}/>
+                <img className="images" src={image2}/>
+                <img className="images" src={image3}/>
+                <img className="images" src={image4}/>
+                <img className="images" src={image5}/>
+                <img className="images" src={image6}/>
+
+                <img className="images" src={image2}/>
+                <img className="images" src={image3}/>
+                <img className="images" src={image1}/>
+                <img className="images" src={image6}/>
+                <img className="images" src={image4}/>
+                <img className="images" src={image5}/>
+            </div>
         </div>
     )
 }
