@@ -1,7 +1,7 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
 }
 
 .pad-left {
@@ -10,7 +10,6 @@
 
 .title-container {
     display: flex;
-    flex-direction: row;
 }
 
 .title {
@@ -18,17 +17,15 @@
 }
 
 .sub-title {
-    margin-left: 10px;
     font-size: 35px;
 }
 
 .intro {
     width: 500px;
-
     font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     letter-spacing: 8px;
-    line-height: 2;
+    line-height: 1.8;
     text-align: justify;
 }
 
@@ -39,15 +36,12 @@
 
 .bottom-container {
     position: relative;
-
     display: flex;
-    flex: 1;
     /* 405px is the top half up to the ticker plus the 2 padding of the bottom-container */
-    max-height: calc(100vh - 405px);
-    flex-direction: row;
+    height: calc(100vh - 405px);
+
     justify-content: space-between;
     gap: 20px;
-
     padding: 40px;
 }
 
@@ -60,7 +54,6 @@
     /* 270px aligns it with the title */
     margin-top: -270px;
     width: 380px;
-    object-fit: cover;
 }
 
 .scroll-container {
@@ -94,33 +87,62 @@
     }
 }
 
-@media (max-width: 767px) {
+/* media changes */
+@media (orientation: landscape) and (max-width: 915px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 1470px) and (min-width: 915px) {
+    .image1 {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .image2 {
+        display: none;
+    }
+
+    .scroll-container {
+        display: none;
+    }
+}
+
+@media (max-width: 915px) {
     .title {
         font-size: 70px;
     }
 
     .sub-title {
-        margin-left: 5px;
         font-size: 18px;
     }
 
-    .intro {
-        /* width minus padding both sides */
-        width: calc(100% - 80px);
+    .bottom-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
 
-        font-family: 'Roboto Mono', monospace;
-        font-size: 13px;
-        letter-spacing: 4px;
-        line-height: 2;
-        text-align: justify;
-        padding-right: 20px;
+        align-items: center;
+        padding: 20px;
     }
 
-    /*.image1 {*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    object-fit: cover;*/
-    /*}*/
+    .intro {
+        width: 100%;
+        font-size: 15px;
+        letter-spacing: 4px;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .image1 {
+        width: 80%;
+    }
+
+    .image2 {
+        display: none;
+    }
 
     .scroll-container {
         display: none;
@@ -130,5 +152,11 @@
 @media (max-height: 780px) {
     .scroll-container {
         display: none;
+    }
+
+    .intro {
+        font-size: 15px;
+        letter-spacing: 4px;
+        line-height: 2;
     }
 }

@@ -1,23 +1,22 @@
 import React from "react";
 import Main from "./Main/Main";
 import Products from "./Products";
-import "./Home.css";
 
 const Home: React.FC = () => {
     return (
-        <>
-            <div className='full-vh' style={{backgroundColor: 'black'}}>
+        <div>
+            <div>
                 <Main/>
             </div>
 
-            <div className='full-vh' style={{backgroundColor: 'red'}}>
+            <div style={{backgroundColor: 'red'}}>
                 <Products/>
             </div>
 
-            <div className='full-vh' style={{backgroundColor: 'brown'}}>
+            <div style={{backgroundColor: 'brown'}}>
                 {"TODO"}
             </div>
-        </>
+        </div>
     )
 }
 

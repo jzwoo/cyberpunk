@@ -28,7 +28,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 915px) {
     .ticker li {
         display: inline-block;
         font-weight: bold;

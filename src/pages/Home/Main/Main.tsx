@@ -28,10 +28,9 @@ const Main: React.FC = () => {
                     <span className="blink-caret"> Check out the new neohuman collection.</span>
                 </p>
 
-                <div>
-                    <img className="image1" src="image1.jpg"/>
-                </div>
+                <img className="image1" src="image1.jpg"/>
 
+                {/* image2 is put in a div because for some reason the pic does not move up */}
                 <div>
                     <img className="image2" src="image2.jpg"/>
                 </div>

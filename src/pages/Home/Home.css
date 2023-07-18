@@ -1,9 +1,0 @@
-.full-vh {
-    height: 100vh
-}
-
-@media (max-height: 500px) {
-    .full-vh {
-        height: auto;
-    }
-}
