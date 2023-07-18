@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
-import {getAllProducts} from "../../../api/requests";
-import APIv1 from "../../../api/types";
-import "./Products.css";
+import {getAllProducts} from "../../api/requests";
+import APIv1 from "../../api/types";
+import "./Store.css";
 
-const Products: React.FC = () => {
+const Store: React.FC = () => {
     const [products, setProducts] = useState<APIv1.Product[]>([]);
 
     useEffect(() => {
@@ -27,7 +27,7 @@ const Products: React.FC = () => {
     const image6 = "image6.jpg"
 
     return (
-        <div id="products" className="products-container">
+        <div className="products-container">
             <div className="gallery-container">
                 <img className="images" src={image1}/>
                 <img className="images" src={image2}/>
@@ -47,4 +47,4 @@ const Products: React.FC = () => {
     )
 }
 
-export default Products;
+export default Store;

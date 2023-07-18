@@ -5,6 +5,7 @@ import {Navigate, Route, Routes} from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import User from "./pages/User/User";
+import Store from "./pages/Store/Store";
 
 const App: React.FC = () => {
     return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
             <Route path="/">
                 {/* public routes */}
                 <Route path="/" element={<Home/>}/>
+                <Route path="/store" element={<Store/>}/>
                 <Route path="login" element={<Login/>}/>
                 <Route path="register" element={<Register/>}/>
 

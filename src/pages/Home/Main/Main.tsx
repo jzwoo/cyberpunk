@@ -37,11 +37,11 @@ const Main: React.FC = () => {
             </div>
 
             <div className="scroll-container">
-                <a href="#products">
+                <a href="#credits">
                     SCROLL
                 </a>
 
-                <a href="#products">
+                <a href="#credits">
                     <span>{`[${Text.SCROLL_JAP}]`}</span>
                 </a>
             </div>
