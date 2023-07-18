@@ -1,17 +1,13 @@
 import React from "react";
 import Main from "./Main/Main";
-import Products from "./Products";
+import Products from "./Products/Products";
 
 const Home: React.FC = () => {
     return (
         <div>
-            <div>
-                <Main/>
-            </div>
+            <Main/>
 
-            <div style={{backgroundColor: 'red'}}>
-                <Products/>
-            </div>
+            <Products/>
 
             <div style={{backgroundColor: 'brown'}}>
                 {"TODO"}
