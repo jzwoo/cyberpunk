@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {getAllProducts} from "../../api/requests";
 import APIv1 from "../../api/types";
+import Gallery from "../../components/Gallery/Gallery";
 import "./Store.css";
 
 const Store: React.FC = () => {
@@ -19,32 +20,11 @@ const Store: React.FC = () => {
         }
     }, []);
 
-    const image1 = "image1.jpg"
-    const image2 = "image2.jpg"
-    const image3 = "image3.jpg"
-    const image4 = "image4.jpg"
-    const image5 = "image5.jpg"
-    const image6 = "image6.jpg"
-
     return (
         <div className="products-container">
-            <div className="gallery-container">
-                <img className="images" src={image1}/>
-                <img className="images" src={image2}/>
-                <img className="images" src={image3}/>
-                <img className="images" src={image4}/>
-                <img className="images" src={image5}/>
-                <img className="images" src={image6}/>
-
-                <img className="images" src={image2}/>
-                <img className="images" src={image3}/>
-                <img className="images" src={image1}/>
-                <img className="images" src={image6}/>
-                <img className="images" src={image4}/>
-                <img className="images" src={image5}/>
-            </div>
+            <Gallery products={products}/>
         </div>
-    )
-}
+    );
+};
 
 export default Store;

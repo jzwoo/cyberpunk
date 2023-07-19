@@ -5,11 +5,16 @@ declare namespace APIv1 {
         data: T
     }
 
+    type Image = {
+        aspectRatio: number
+        url: string
+    }
+
     type Product = {
         id: string
         name: string
         description: string
-        imageURL: string
+        image: Image
         price: number
         quantity: number
         disabled: boolean
