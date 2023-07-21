@@ -10,6 +10,13 @@ interface GalleryProps {
 
 const Gallery: React.FC<GalleryProps> = (props) => {
     const {products} = props;
+    const targetHeightForImage = 200;
+    const margin = 6;
+    const padding = 16;
+    const paddingLeft = padding;
+    const paddingRight = padding - margin;
+    // actual width is 18.2px but round up to 19
+    const maxScrollBarWidth = 19;
 
     const [rows, setRows] = useState<CardProps[][]>([]);
 
@@ -18,9 +25,7 @@ const Gallery: React.FC<GalleryProps> = (props) => {
     }, [products])
 
     const processProducts = () => {
-        const fixedHeight = 200;
-        const margin = 6;
-        const viewportWidth = window.innerWidth - 80;
+        const viewportWidth = window.innerWidth - maxScrollBarWidth - paddingLeft - paddingRight;
 
         let currentWidth = 0;
         const rows: CardProps[][] = [];
@@ -29,8 +34,7 @@ const Gallery: React.FC<GalleryProps> = (props) => {
 
         products.forEach((product) => {
             const productImageAspectRatio = product.image.aspectRatio;
-
-            const targetWidth = fixedHeight * productImageAspectRatio;
+            const targetWidth = targetHeightForImage * productImageAspectRatio;
             row.push({product: product, width: targetWidth});
 
             const totalWidth = targetWidth + margin;
@@ -66,7 +70,7 @@ const Gallery: React.FC<GalleryProps> = (props) => {
     };
 
     return (
-        <div className="gallery">
+        <div className="gallery" style={{padding, paddingLeft, paddingRight}}>
             {rows.map((row) => {
                 return row.map((cardProps, key) => {
                     return (
