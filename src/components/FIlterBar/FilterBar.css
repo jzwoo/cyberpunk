@@ -1,0 +1,25 @@
+.filterBar {
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    border-bottom: 2px solid #2e2f34;
+    background-color: var(--black);
+}
+
+.titleContainer {
+    line-height: 0.6;
+    margin-bottom: 30px;
+}
+
+.sub-title, .title {
+    vertical-align: top;
+}
+
+.title {
+    font-size: 80px;
+}
+
+.sub-title {
+    font-size: 25px;
+}

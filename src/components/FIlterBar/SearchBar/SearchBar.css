@@ -1,0 +1,39 @@
+.search-bar-container {
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: fit-content;
+    border: 2px solid gold;
+    background-color: var(--white);
+    border-radius: 6px;
+    overflow: clip;
+}
+
+.input {
+    width: 500px;
+    min-width: 200px;
+    font-size: 18px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search-button {
+    min-height: 40px;
+    min-width: 80px;
+    border: none;
+    cursor: pointer;
+    background-color: gold;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
