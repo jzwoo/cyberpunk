@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import APIv1 from "../../api/types";
-import Card from "./Card";
-import {CardProps} from "./Card";
+import Card from "./Card/Card";
+import {CardProps} from "./Card/Card";
 import "./Gallery.css"
 
 interface GalleryProps {
