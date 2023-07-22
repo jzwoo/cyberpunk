@@ -9,8 +9,8 @@ const FilterBar: React.FC<SearchBarProps> = (props) => {
     return (
         <div className="filterBar">
             <div className="titleContainer">
-                <span className="title">STORE</span>
-                <span className="sub-title">{`[${Text.STORE_JAP}]`}</span>
+                <span className="filterBar-title">STORE</span>
+                <span className="filterBar-sub-title">{`[${Text.STORE_JAP}]`}</span>
             </div>
 
             <SearchBar placeholder={placeholder} onEnter={onEnter}/>

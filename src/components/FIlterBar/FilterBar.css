@@ -12,14 +12,14 @@
     margin-bottom: 30px;
 }
 
-.sub-title, .title {
+.filterBar-sub-title, .filterBar-title {
     vertical-align: top;
 }
 
-.title {
+.filterBar-title {
     font-size: 80px;
 }
 
-.sub-title {
+.filterBar-sub-title {
     font-size: 25px;
 }

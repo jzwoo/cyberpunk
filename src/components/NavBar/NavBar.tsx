@@ -5,6 +5,10 @@ const NavBar: React.FC = () => {
     return (
         <div className="navBar">
             <div>
+                HOME
+            </div>
+
+            <div>
                 STORE
             </div>
 

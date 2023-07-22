@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../../../components/NavBar/NavBar";
 import Ticker from "../../../components/Ticker/Ticker";
 import {Text} from "../../../constants/constants";
 import "./Main.css"
@@ -7,8 +6,6 @@ import "./Main.css"
 const Main: React.FC = () => {
     return (
         <div className="main-container">
-            <NavBar/>
-
             <div className="title-container pad-left">
                 <div className="title">
                     CYBER

@@ -1,7 +1,8 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* 60px for the navbar */
+    height: calc(100vh - 60px);
 }
 
 .pad-left {
@@ -23,12 +24,15 @@
 .bottom-container {
     position: relative;
     display: flex;
-    /* 405px is the top half up to the ticker plus the 2 padding of the bottom-container */
-    height: calc(100vh - 405px);
+    flex: 1;
+
+    box-sizing: border-box;
+    padding: 40px;
+    /* 327px is the top half up to the ticker */
+    height: calc(100vh - 327px);
 
     justify-content: space-between;
     gap: 20px;
-    padding: 40px;
 }
 
 .intro {
