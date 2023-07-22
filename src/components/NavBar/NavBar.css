@@ -1,9 +1,26 @@
 .navBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
     box-sizing: border-box;
     padding: 20px 40px;
     height: 60px;
     font-family: 'Exo 2', sans-serif;
+}
+
+.navBar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.active{
+    border-bottom: 1px solid gold;
 }
